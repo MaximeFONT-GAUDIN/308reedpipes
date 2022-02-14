@@ -60,7 +60,7 @@ def print_result(result, vector, var):
     for i in range(var['n']):
         print("abscissa: {:.1f} cm\tradius: {:.1f} cm".format(20 / (var['n'] - 1) * i, result[i]))
 
-var = {'r0': float(sys.argv[1]), 'r5': float(sys.argv[2]), 'r10': float(sys.argv[3]), 'r15': float(sys.argv[4]), 'r20': float(sys.argv[5]), 'n': int(sys.argv[6])}
 verif_arg()
+var = {'r0': float(sys.argv[1]), 'r5': float(sys.argv[2]), 'r10': float(sys.argv[3]), 'r15': float(sys.argv[4]), 'r20': float(sys.argv[5]), 'n': int(sys.argv[6])}
 result, vector = compute(var)
 print_result(result, vector, var)
