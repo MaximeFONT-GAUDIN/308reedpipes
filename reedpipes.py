@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 import sys
 
-from urllib3 import Retry
-
 def verif_arg():
     args = []
     for arg in sys.argv:
